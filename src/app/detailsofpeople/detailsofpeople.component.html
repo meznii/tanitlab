@@ -1,0 +1,69 @@
+<div class="container">
+  <div class="container-fluid text-center">
+    <div class="card">
+      <div class="card-header">
+        Details of people
+      </div>
+      <div class="card-body">
+
+        <div class="row">
+
+
+          <div  *ngIf="list">
+            <div class="text-center">
+              <ul class="list-group">
+                <li class="list-group-item active">Deatils People</li>
+                <li class="list-group-item"> Name :{{list.name}} </li>
+                <li class="list-group-item"> Firstname :{{list.username}} </li>
+                <li class="list-group-item"> Email: {{list.email}} </li>
+                <li class="list-group-item"> Address:
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                     Street : {{list.address.street}}
+
+                    </li>
+                    <li class="list-group-item">
+                      Suite :{{list.address.suite}}
+
+                    </li>
+                    <li class="list-group-item">
+                      City : {{list.address.city}}
+
+                    </li>
+
+                    <li class="list-group-item">
+                      Zipcode : {{list.address.zipcode}}
+
+                    </li>
+                    <li class="list-group-item">
+                      <ul class="list-group">Geo :
+                        <li class="list-group-item"> lat :
+                          {{list.address.geo.lat}}
+                        </li>
+                        <li class="list-group-item"> lng :
+                          {{list.address.geo.lng}}
+                        </li>
+                      </ul>
+
+                    </li>
+                  </ul>
+                </li>
+                <li class="list-group-item"> phone: {{list.phone}} </li>
+                <li class="list-group-item"> website: {{list.website}} </li>
+                <li class="list-group-item"> company: Name :{{list.company.name}}
+                  <br> catchphrase :{{list.company.catchPhrase}}
+                  <br> bs :{{list.company.bs}}</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
